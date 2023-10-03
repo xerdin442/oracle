@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "clash-display-bold";
+  src: url("../project/assets/ClashDisplay-Semibold.otf");
+}
+@font-face {
+  font-family: "clash-display-medium";
+  src: url("../project/assets/ClashDisplay-Medium.otf");
+}
+
+@layer utilities {
+  .large-shadow {
+    box-shadow: 5px 4px 0px 1px #000;
+  }
+  .medium-shadow {
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+  .small-shadow {
+    box-shadow: 2px 2px 0px 0px #000;
+  }
+  .large-font {
+    font-size: 5.4rem;
+    line-height: 1.1;
+  }
+}
