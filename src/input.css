@@ -25,4 +25,14 @@
     font-size: 5.4rem;
     line-height: 1.1;
   }
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
