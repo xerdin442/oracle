@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "clash-display-bold";
-  src: url("../project/assets/ClashDisplay-Semibold.otf");
-}
-@font-face {
-  font-family: "clash-display-medium";
-  src: url("../project/assets/ClashDisplay-Medium.otf");
+@layer base {
+  @font-face {
+    font-family: "clash-display-bold";
+    src: url("../project/assets/ClashDisplay-Semibold.otf");
+  }
+  @font-face {
+    font-family: "clash-display-medium";
+    src: url("../project/assets/ClashDisplay-Medium.otf");
+  }
 }
 
 @layer utilities {
