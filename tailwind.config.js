@@ -4,11 +4,9 @@ module.exports = {
     "./project/*.{html,js}"
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        "clash-display-bold": ["clash-display-bold", "serif"],
-        "clash-display-medium": ["clash-display-medium", "serif"],
-      }
+    fontFamily: {
+      "clash-display-bold": ["clash-display-bold", "serif"],
+      "clash-display-medium": ["clash-display-medium", "serif"],
     },
   },
   plugins: [],

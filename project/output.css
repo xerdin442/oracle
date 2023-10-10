@@ -437,13 +437,13 @@ video {
 @font-face {
   font-family: "clash-display-bold";
 
-  src: url("../project/assets/ClashDisplay-Semibold.ttf");
+  src: url("../project/fonts/ClashDisplay-Semibold.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "clash-display-medium";
 
-  src: url("../project/assets/ClashDisplay-Medium.ttf") format('truetype');
+  src: url("../project/fonts/ClashDisplay-Medium.ttf") format('truetype');
 }
 
 html {
@@ -1160,10 +1160,6 @@ html {
 
 .font-clash-display-bold {
   font-family: clash-display-bold, serif;
-}
-
-.font-clash-display-medium {
-  font-family: clash-display-medium, serif;
 }
 
 .text-3xl {
