@@ -446,7 +446,7 @@ video {
   src: url("../project/fonts/ClashDisplay-Medium.ttf") format('truetype');
 }
 
-html {
+body {
   font-family: clash-display-medium, serif;
 }
 

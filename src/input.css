@@ -12,7 +12,7 @@
     src: url("../project/fonts/ClashDisplay-Medium.ttf") format('truetype');
   }
 
-  html {
+  body {
     @apply font-clash-display-medium;
   }
 }
