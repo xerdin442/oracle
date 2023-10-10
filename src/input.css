@@ -5,11 +5,11 @@
 @layer base {
   @font-face {
     font-family: "clash-display-bold";
-    src: url("../project/assets/ClashDisplay-Semibold.otf");
+    src: url("../project/assets/ClashDisplay-Semibold.ttf");
   }
   @font-face {
     font-family: "clash-display-medium";
-    src: url("../project/assets/ClashDisplay-Medium.otf");
+    src: url("../project/assets/ClashDisplay-Medium.ttf");
   }
 }
 
