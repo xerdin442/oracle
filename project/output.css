@@ -443,7 +443,11 @@ video {
 @font-face {
   font-family: "clash-display-medium";
 
-  src: url("../project/assets/ClashDisplay-Medium.ttf");
+  src: url("../project/assets/ClashDisplay-Medium.ttf") format('truetype');
+}
+
+html {
+  font-family: clash-display-medium, serif;
 }
 
 *, ::before, ::after {
