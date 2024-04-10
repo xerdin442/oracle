@@ -10,7 +10,7 @@
   <body class="tracking-wide bg-amber-100">
     <!--Header-->
     <div class="bg-black text-white text-sm text-center py-1 lg:py-2 lg:text-base lg:tracking-wider">
-      We've just raised <span class="text-lime-400">$150m</span> to continue building a digital future! <span class="text-lime-400 underline">Read more here</span> <span class="text-lime-400">&rarr;</span>
+      We've just raised <span class="text-lime-400">$150m</span> to continue building a digital future! <span class="text-lime-400 underline cursor-pointer">Read more here</span> <span class="text-lime-400">&rarr;</span>
     </div>
 
     <!--Navbar-->
@@ -74,13 +74,13 @@
 
     <!--Services-->
     <div class="reveal grid grid-cols-1 justify-center items-start gap-y-5 mt-7 md:grid-cols-3 md:space-x-14 max-w-5xl lg:space-x-36 lg:mt-10">
-      <p class="bg-amber-100 md:order-2 text-xl lg:text-2xl border-2 border-black font-clash-display-bold text-center md:-ml-0.5 rounded-br-3xl py-3 w-52 lg:w-64 lg:py-4 mx-auto md:mx-0 hover:bg-amber-200 rounded-tr-md medium-shadow">What we do best</p>
+      <p class="bg-amber-100 md:order-2 text-xl lg:text-2xl border-2 border-black font-clash-display-bold text-center md:-ml-0.5 rounded-br-3xl py-3 w-52 lg:w-64 lg:py-4 mx-auto md:mx-0 hover:bg-amber-200 rounded-tr-md medium-shadow cursor-pointer">What we do best</p>
 
       <div class="bg-amber-100 md:order-1 text-xl border-2 border-black text-center rounded-br-3xl col-span-2 rounded-tl-3xl py-3 px-2 mx-3 sm:mx-8 md:mx-0 md:p-4 medium-shadow">
         <div class="bg-white pl-3 pr-2 accordion py-5 rounded-tl-2xl rounded-br-2xl grid grid-cols-1 gap-y-5 md:pl-5 md:pr-3 md:py-6">
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">Custom Software Development</p>
@@ -91,7 +91,7 @@
 
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">Web Development</p>
@@ -102,7 +102,7 @@
 
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">Mobile App Development</p>
@@ -113,7 +113,7 @@
 
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">DevOps Automation</p>
@@ -124,7 +124,7 @@
 
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">Systems Integation</p>
@@ -135,7 +135,7 @@
 
           <div class="accordion-item">
             <div class="flex items-start space-x-3 md:space-x-6">
-              <p class="text-4xl font-semibold toggle-button cursor-pointer">+</p>
+              <p class="text-4xl font-semibold toggle-button cursor-pointer" onclick="toggleAccordion(this)">+</p>
 
               <div class="grid grid-cols-1 gap-y-2 text-left mt-1.5">
                 <p class="font-semibold">Software Prototyping</p>
@@ -155,16 +155,16 @@
       </div>
 
       <div class="grid grid-cols-1 process-box">
-        <span class="bg-sky-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5">Client Immersion
+        <span class="bg-sky-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5" onclick="toggleDetail(this)">Client Immersion
           <p class="font-normal text-sm mt-2 process-detail lg:text-base">Implement client immersion programs to deeply understand client goals, fostering empathy & creative alignment in executing briefs.</p>
         </span>
-        <span class="bg-orange-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5">Prototyping
+        <span class="bg-orange-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5" onclick="toggleDetail(this)">Prototyping
           <p class="font-normal text-sm mt-2 process-detail hidden lg:text-base">Implement client immersion programs to deeply understand client goals, fostering empathy & creative alignment in executing briefs.</p>
         </span>
-        <span class="bg-purple-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5">Storytelling
+        <span class="bg-purple-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5" onclick="toggleDetail(this)">Storytelling
           <p class="font-normal text-sm mt-2 process-detail hidden lg:text-base">Implement client immersion programs to deeply understand client goals, fostering empathy & creative alignment in executing briefs.</p>
         </span>
-        <span class="bg-green-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5">Design Thinking
+        <span class="bg-green-200 py-4 sm:py-6 rounded-e-lg px-3 font-semibold text-xl process-header cursor-pointer lg:text-2xl lg:px-5" onclick="toggleDetail(this)">Design Thinking
           <p class="font-normal text-sm mt-2 process-detail hidden lg:text-base">Implement client immersion programs to deeply understand client goals, fostering empathy & creative alignment in executing briefs.</p>
         </span>
       </div>
@@ -238,7 +238,7 @@
       <p class="font-clash-display-bold text-xl text-center md:text-left md:mx-0 mx-1 sm:mx-8 md:order-1 lg:ml-20 lg:text-3xl">Let's help you create innovative solutions towards achieving a true digital future</p>
 
       <form action="" method="post" autocomplete="on" class="order-3 md:row-span-2 lg:col-span-2">
-        <select name="service" class="bg-amber-100 w-80 sm:w-96 lg:w-[480px] text-sm lg:text-base lg:h-14 block mx-auto h-12 sm:pl-3 relative border-2 border-black small-shadow focus:bg-sky-50 focus:outline-none focus:-translate-y-2">
+        <select name="service" class="bg-amber-100 w-80 sm:w-96 lg:w-[480px] text-sm lg:text-base lg:h-14 block mx-auto h-12 sm:pl-3 relative border-2 border-black small-shadow focus:bg-sky-50 focus:outline-none focus:-translate-y-2 cursor-pointer">
           <option value="Choose a service" selected disabled>Choose a service</option>
           <option value="Custom Software Development">Custom Software Development</option>
           <option value="Web Development">Web Development</option>
@@ -284,10 +284,10 @@
           </div>
           
           <div class="mt-7 flex items-center space-x-4">
-            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow border-2 border-black"><img src="assets/facebook-app-symbol-b&w.png" alt="" class="w-6 h-6"></div>
-            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow border-2 border-black"><img src="assets/twitter-logo.png" alt="" class="w-5 h-5"></div>
-            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow border-2 border-black"><img src="assets/instagram.png" alt="" class="w-5 h-5"></div>
-            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow border-2 border-black"><img src="assets/linkedin-b&w.png" alt="" class="w-6 h-6"></div>
+            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow cursor-pointer border-2 border-black hover:bg-purple-600"><img src="assets/facebook-app-symbol-b&w.png" alt="" class="w-6 h-6"></div>
+            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow cursor-pointer border-2 border-black hover:bg-purple-600"><img src="assets/twitter-logo.png" alt="" class="w-5 h-5"></div>
+            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow cursor-pointer border-2 border-black hover:bg-purple-600"><img src="assets/instagram.png" alt="" class="w-5 h-5"></div>
+            <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center small-shadow cursor-pointer border-2 border-black hover:bg-purple-600"><img src="assets/linkedin-b&w.png" alt="" class="w-6 h-6"></div>
           </div>
         </div>
 
