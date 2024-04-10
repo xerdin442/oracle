@@ -5,11 +5,11 @@
 @layer base {
   @font-face {
     font-family: "clash-display-bold";
-    src: url("https://drive.google.com/file/d/1oPVMWpZzn25wKBC1Jr3CbdH7iWwVu-07/view?usp=drive_link") format('truetype');
+    src: url("../docs/fonts/ClashDisplay-Semibold.ttf") format('truetype');
   }
   @font-face {
     font-family: "clash-display-medium";
-    src: url("https://drive.google.com/file/d/1FXlgYQaYEtgwhdyCZZk6kZ_ONw7P0KOY/view?usp=drive_link") format('truetype');
+    src: url("../docs/fonts/ClashDisplay-Medium.ttf") format('truetype');
   }
 
   body {
